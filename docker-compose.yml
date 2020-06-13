@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    ava-network: 
+        build:
+            context: './network'
+        ports:
+            - "9650:9650"
+    ava-wallet:
+        build: 
+            context: './wallet'
+        ports: 
+            - "80:8080"
